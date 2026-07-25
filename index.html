@@ -3,40 +3,114 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Peyo プライバシーポリシー</title>
+<title>Peyo — ペヨーテステッチのビーズ図案アプリ</title>
+<meta name="description" content="指でなぞるだけでペヨーテステッチの図案が描ける iOS アプリ。色ごとのビーズ数を自動集計し、図案は画像として書き出せます。">
+<meta property="og:title" content="Peyo — ペヨーテステッチのビーズ図案アプリ">
+<meta property="og:description" content="指でなぞるだけでペヨーテステッチの図案が描ける iOS アプリ。色ごとのビーズ数を自動集計します。">
+<meta property="og:image" content="https://atani.github.io/peyo-legal/images/screenshot-editor.jpg">
+<meta property="og:type" content="website">
 <style>
-  body { font-family: -apple-system, "Hiragino Sans", sans-serif; max-width: 720px; margin: 0 auto; padding: 24px; line-height: 1.8; color: #333; }
-  h1 { font-size: 1.5rem; border-bottom: 2px solid #e8557a; padding-bottom: 8px; }
-  h2 { font-size: 1.15rem; margin-top: 2em; }
-  footer { margin-top: 3em; font-size: 0.85rem; color: #888; }
+  :root { --accent: #e8557a; --text: #333; --muted: #777; --line: #eee; }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, "Hiragino Sans", sans-serif; max-width: 720px; margin: 0 auto; padding: 24px; line-height: 1.8; color: var(--text); }
+  h1 { font-size: 1.6rem; margin-bottom: 4px; }
+  h2 { font-size: 1.15rem; margin-top: 2.5em; border-bottom: 2px solid var(--accent); padding-bottom: 6px; }
+  h3 { font-size: 1rem; margin-bottom: 0.2em; }
+  .hero { text-align: center; padding: 16px 0 8px; }
+  .hero img.icon { width: 96px; height: 96px; border-radius: 22px; }
+  .tagline { font-size: 1.05rem; color: var(--muted); margin-top: 0; }
+  .cta { display: inline-block; background: var(--accent); color: #fff; text-decoration: none; padding: 12px 28px; border-radius: 999px; font-weight: 600; margin: 12px 0; }
+  .cta:hover { opacity: .88; }
+  .price { font-size: .85rem; color: var(--muted); }
+  .shots { display: flex; gap: 12px; overflow-x: auto; padding: 8px 0; }
+  .shots img { width: 32%; min-width: 180px; border-radius: 10px; border: 1px solid var(--line); }
+  ul { padding-left: 1.3em; }
+  li { margin-bottom: 6px; }
+  .langs { color: var(--muted); font-size: .95rem; }
+  footer { margin-top: 3.5em; padding-top: 1em; border-top: 1px solid var(--line); font-size: 0.85rem; color: var(--muted); }
+  footer a { color: var(--muted); }
+  .en { margin-top: 3em; padding-top: 1em; border-top: 1px dashed var(--line); }
+  @media (max-width: 520px) { .shots img { width: 70%; } }
 </style>
 </head>
 <body>
-<h1>Peyo プライバシーポリシー</h1>
-<p>最終更新日: 2026年7月16日</p>
 
-<p>Peyo（以下「本アプリ」）は、ペヨーテステッチのビーズ図案を作成する iOS アプリです。本ポリシーは、本アプリが扱う情報と、その取り扱いを説明します。</p>
+<div class="hero">
+  <img class="icon" src="images/icon.png" alt="Peyo アイコン">
+  <h1>Peyo</h1>
+  <p class="tagline">ペヨーテステッチのビーズ図案を、指で描く。</p>
+  <p><a class="cta" href="https://apps.apple.com/jp/app/peyo/id6791587493">App Store でダウンロード</a></p>
+  <p class="price">無料（広告あり）／ 300円の買い切りで広告を非表示にできます</p>
+</div>
 
-<h2>1. 作成したデータの保存場所</h2>
-<p>図案・作品ギャラリー・購入状態などの利用データは、すべてお使いの端末内にのみ保存されます。開発者がこれらのデータを収集・送信・閲覧することはありません。写真への書き出しは、利用者の操作にもとづいて端末の写真ライブラリへ保存します。</p>
+<p>Peyo は、ペヨーテステッチ（半目ずらしのビーズ編み）の図案を描く iOS アプリです。方眼紙に図案を書き起こし、必要なビーズを数える作業を、指1本で終わらせます。</p>
 
-<h2>2. 広告について</h2>
-<p>本アプリの無料利用時には、Google AdMob によるバナー広告を表示します。広告配信にともない、Google が広告の表示・不正防止のためにデバイス情報などを処理する場合があります。詳細は <a href="https://policies.google.com/privacy?hl=ja">Google プライバシーポリシー</a> をご確認ください。</p>
-<p>本アプリは App Tracking Transparency（ATT）による許諾を求めず、IDFA を利用したトラッキングを行いません。欧州経済領域（EEA）および英国では、法令にもとづく同意メッセージを表示し、同意状況に応じた広告を配信します。</p>
-<p>広告非表示の買い切り購入後は、広告ビューを生成せず、広告リクエストも送信しません。</p>
+<h2>できること</h2>
 
-<h2>3. アプリ内購入</h2>
-<p>広告非表示の購入は Apple の App Store を通じて処理されます。開発者がクレジットカード情報などの決済情報を受け取ることはありません。</p>
+<div class="shots">
+  <img src="images/screenshot-editor.jpg" alt="図案を描いている画面">
+  <img src="images/screenshot-export.jpg" alt="図案を画像として書き出す画面">
+  <img src="images/screenshot-gallery.jpg" alt="保存した図案の一覧画面">
+</div>
 
-<h2>4. 収集しない情報</h2>
-<p>本アプリは、アカウント登録・位置情報・連絡先・写真ライブラリの読み取りなど、上記以外の個人情報を収集しません。</p>
+<ul>
+  <li>半目ずれのペヨーテ配列を再現したキャンバス</li>
+  <li>指でなぞって塗る操作。速くなぞっても塗り残しません</li>
+  <li>2本指のパンとピンチズームで細部まで編集</li>
+  <li>色ごとの使用ビーズ数を自動集計。買い出しにそのまま使えます</li>
+  <li>消しゴム・取り消し・やり直し・全消去</li>
+  <li>作った図案は端末内のギャラリーに保存</li>
+  <li>図案を画像として書き出して、写真に保存・共有</li>
+</ul>
 
-<h2>5. お問い合わせ</h2>
-<p>本ポリシーに関するお問い合わせは、<a href="support.html">サポートページ</a> からお願いします。</p>
+<h2>プライバシー</h2>
 
-<h2>6. 変更について</h2>
-<p>本ポリシーを変更する場合は、このページで告知します。</p>
+<ul>
+  <li>アカウント登録は不要です</li>
+  <li>図案は端末内にのみ保存されます。開発者が閲覧することはありません</li>
+  <li>トラッキングは行いません（ATT・IDFA を使用しません）</li>
+</ul>
 
-<footer>© 2026 atani</footer>
+<p>詳細は <a href="privacy.html">プライバシーポリシー</a> をご覧ください。</p>
+
+<h2>対応言語</h2>
+
+<p class="langs">日本語、英語、フランス語、ドイツ語、スペイン語、イタリア語</p>
+
+<h2>料金</h2>
+
+<p>図案の作成・保存・書き出しはすべて無料で使えます。無料利用時はバナー広告を表示します。広告を消したい場合は、300円の買い切り購入（サブスクリプションではありません）で非表示にできます。</p>
+
+<h2>お問い合わせ</h2>
+
+<p>使い方の質問・不具合の報告・ご要望は <a href="support.html">サポートページ</a> からお願いします。</p>
+
+<div class="en">
+  <h2>English</h2>
+
+  <p>Peyo is an iOS app for drawing bead patterns for peyote stitch. Draw on a staggered canvas with your finger, and Peyo counts the beads you need in each color automatically — so you can shop and stitch without doing the math.</p>
+
+  <ul>
+    <li>A canvas that matches the real peyote stagger</li>
+    <li>Finger painting that keeps up with fast strokes</li>
+    <li>Two-finger pan and pinch to zoom</li>
+    <li>Automatic per-color bead counts</li>
+    <li>Eraser, undo, redo, and clear all</li>
+    <li>An on-device gallery for your designs</li>
+    <li>Export a design to Photos or share it as an image</li>
+  </ul>
+
+  <p>No account, no cloud, no subscription. Everything works offline and stays on your device. Available in English, Japanese, French, German, Spanish, and Italian.</p>
+
+  <p>Drawing is free with banner ads. A single one-time purchase removes the ads. See the <a href="privacy.html">privacy policy</a> or the <a href="support.html">support page</a>.</p>
+
+  <p><a class="cta" href="https://apps.apple.com/app/id6791587493">Download on the App Store</a></p>
+</div>
+
+<footer>
+  <a href="privacy.html">プライバシーポリシー</a> ・ <a href="support.html">サポート</a><br>
+  © 2026 atani
+</footer>
+
 </body>
 </html>
